@@ -8,7 +8,7 @@ const Header = (props) => {
     <header
       className="custom-nav-container"
     >
-      <h1>justjulieta</h1>
+      <h1>It's just Julieta.</h1>
       <Nav
         currentPage={currentPage}
         handlePageChange={handlePageChange}
