@@ -1,18 +1,36 @@
-import React from 'react';
+import React from "react";
 
-const Nav = (props) => {
-  const { currentPage, handlePageChange } = props;
+const Nav = ({ currentPage, handlePageChange }) => {
+  return (
+    <nav className="custom-nav">
 
-return(
-      <nav>
-        <ul>
-          <li href="#home" onClick={() => handlePageChange("Home")}"/">Home</li>
-          <li href="#About" onClick={() => handlePageChange("About")}"/>About</Link></li>
-          <li href="#Portfolio" onClick={() => handlePageChange("Portfolio")}=">Portfolio</li>
-          <li href="#Contacts" onClick={() => handlePageChange("Contacts")}="/"="/contact">Contact</li>
-        </ul>
-      </nav>
-    );
-  };
-  
+        <a
+          href="#about"
+          onClick={() => handlePageChange("About")}
+        >
+          About
+        </a>         
+        <a
+          href="#contact"
+          onClick={() => handlePageChange("Contact")}
+        >
+          Contact
+        </a>       
+        <a
+          href="#portfolio"
+          onClick={() => handlePageChange("Portfolio")}
+        >
+          Portfolio
+        </a>
+        <a
+          href="#resume"
+          onClick={() => handlePageChange("Resume")}
+        >
+          Resume
+        </a>
+
+    </nav>
+  );
+};
+
 export default Nav;
