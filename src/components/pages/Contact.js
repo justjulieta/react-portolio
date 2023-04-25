@@ -1,30 +1,12 @@
-import React, { useState } from "react";
-import Typography from '@mui/material/Typography';
+import React from "react";
 
-const ContactForm = () => {
-  const [submitted, setSubmitted] = useState(false);
-  const handleSubmit = () => {
-    setTimeout(() => {
-      setSubmitted(true);
-    }, 100);
-  };
-
-  if (submitted) {
-    return (
-      <>
-        <h2>Thank you!</h2>
-        <div>We'll be in touch soon.</div>
-      </>
-    );
-  }
-
-  return (
+const Contact = ({ currentPage, handlePageChange }) => {
+return (
     <form style={{ backgroundColor: '#1f1f1f', display: 'block', color: '#fff', padding: '1rem', borderRadius: '0.5rem',}} 
-      onSubmit={handleSubmit}
       method="POST"
       target="_blank"
     >
-      <Typography variant="h2" style={{
+      <h2 style={{
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
@@ -32,8 +14,8 @@ const ContactForm = () => {
         fontWeight: 'bold',
         fontSize: '24px',
         color: '#ffffff',}}>
-            Contact Us
-        </Typography>
+            Contact Me!
+        </h2>
       <div>
         <input style={{ 
           backgroundColor: '#3d3d3d', 
@@ -80,4 +62,4 @@ const ContactForm = () => {
   );
 };
 
-export default ContactForm;
+export default Contact;

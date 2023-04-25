@@ -6,10 +6,10 @@ const About = ({ currentPage, handlePageChange }) => {
       <div
         className="bg-image jumbotron d-flex flex-wrap justify-content-center align-items-center "
       >
-        <div className="d-flex flex-row align-items-center flex-wrap text-white ">
+        <div className="d-flex flex-row flex-wrap text-black ">
           <div className="mx-5 ">
-            <div className="display-2 p-2">Julieta Ramirez-Solis Nguyen</div>
-            <div className="display-6 p-2">
+            <div className="display-5 p-2 align-items-center">Julieta Ramirez-Solis Nguyen</div>
+            <div className="display-7 p-2 align-items-center">
               Student Full Stack Web Developer
             </div>
             <a
@@ -17,11 +17,11 @@ const About = ({ currentPage, handlePageChange }) => {
               onClick={() => handlePageChange("Portfolio")}
               className={
                 currentPage === "Portfolio"
-                  ? "nav-link active bg-dark"
+                  ? "nav-link active bg-light"
                   : "nav-link"
               }
             >
-              <button className="btn  text-white rounded-pill py-2 px-4 mt-4 border-light bg-dark ">
+              <button className="btn  text-white rounded-pill py-2 px-4 mt-4 border-light bg-dark align-items-center">
                 My Portfolio
               </button>
             </a>
@@ -30,8 +30,8 @@ const About = ({ currentPage, handlePageChange }) => {
       </div>
       <div className="d-flex text-light p-4 align-items-center">
         <div className="text-center">
-          <h2 className="px-5 pt-4 display-6">About Me</h2>
-          <p className="lead p-4">
+          <h2 className="px-5 pt-4 display-6 text-black">About Me</h2>
+          <p className="lead p-4 text-black">
             I'm a student web developer and full time teacher in downtown Portland, OR. I wanted to adventure out of teaching to learn something new!
           </p>
         </div>
