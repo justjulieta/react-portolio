@@ -1,13 +1,15 @@
 import React from 'react';
 
-const Nav = ({ currentPage, handlePageChange }) => {
+const Nav = (props) => {
+  const { currentPage, handlePageChange } = props;
+
 return(
       <nav>
         <ul>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/about">About</Link></li>
-          <li><Link to="/portfolio">Portfolio</Link></li>
-          <li><Link to="/contact">Contact</Link></li>
+          <li href="#home" onClick={() => handlePageChange("Home")}"/">Home</li>
+          <li href="#About" onClick={() => handlePageChange("About")}"/>About</Link></li>
+          <li href="#Portfolio" onClick={() => handlePageChange("Portfolio")}=">Portfolio</li>
+          <li href="#Contacts" onClick={() => handlePageChange("Contacts")}="/"="/contact">Contact</li>
         </ul>
       </nav>
     );
